@@ -1,8 +1,8 @@
 name: first com
 on: push
 jobs:
-run first command:
-  runs-on: ubuntu-latest
-  steps:
-    - name: print message
-      run: echo "Hello from github"
+  run_first_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "Hello from github"
