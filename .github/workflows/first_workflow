@@ -1,4 +1,4 @@
-name: first
+name: first com
 on: push
 jobs:
 run first command:
