@@ -1,0 +1,8 @@
+name: second_workflow
+on: workflow_dispatch
+jobs:
+  manual:
+    runs-on: ubuntu-latest
+    steps:
+      - name: let's_try
+        run: echo "hello manual mode"
