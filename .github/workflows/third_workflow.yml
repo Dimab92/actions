@@ -1,4 +1,4 @@
-name: third
+name: third workflow
 on: push
 
 jobs:
@@ -9,3 +9,7 @@ jobs:
       run: |
         pwd
         ls -la
+    - name: use ready
+      uses: actions/checkout@v4
+    - name: list again
+      run: ls -la
