@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: print message
         run: echo "Hello from github"
+      - name: several steps
+        run: |
+          node -v
+          npm -v
