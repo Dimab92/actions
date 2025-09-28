@@ -10,3 +10,8 @@ jobs:
         run: |
           node -v
           npm -v
+  run_one_more_command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list
+        run: ls -la
