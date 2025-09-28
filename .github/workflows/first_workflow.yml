@@ -1,7 +1,7 @@
-name: first com
+name: first workflow
 on: push
 jobs:
-  run_first_command:
+  run-first-command:
     runs-on: ubuntu-latest
     steps:
       - name: print message
@@ -10,8 +10,14 @@ jobs:
         run: |
           node -v
           npm -v
-  run_one_more_command:
+  run_second_command:
     runs-on: ubuntu-latest
     steps:
       - name: list
         run: ls -la
+  run-depend-command:
+    runs-on: ubuntu-latest
+    needs: run-first-command
+    steps:
+      - name: test neds
+        run: mkdir Dimab
