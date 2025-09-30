@@ -1,0 +1,9 @@
+name: manual mode
+on: [workflow_dispatch]
+jobs:
+  manual-mode:
+    runs-on: ububtu-latest
+    steps:
+      - name: print message
+        run: echo $GITHUB_SHA
+ 
