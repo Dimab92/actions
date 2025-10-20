@@ -1,0 +1,9 @@
+name: manual mode testtt
+on: [workflow_dispatch]
+jobs:
+  manual-mode:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo $GITHUB_SHA
+ 

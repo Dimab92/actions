@@ -1,0 +1,11 @@
+name: many triggers
+on:
+  push:
+    branches:
+      - main
+jobs:
+  to-look:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print message
+        run: echo $GITHUB_SHA
