@@ -12,3 +12,15 @@ jobs:
         with:
           name: result
           path: file.txt
+  second-job:
+      runs-on: ubuntu-latest
+      needs: first-job
+      steps:
+        - name: download file
+          uses: actions/download-artifact@v6
+          with:
+            name: result
+        - name: print file
+          run: |
+            value=`cat file.txt`
+            echo $value
