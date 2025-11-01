@@ -1,0 +1,14 @@
+name: dimabat
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: calculator
+        run: expr 2 + 2 > file.txt
+      - name: upload artifact
+        uses: actions/upload-artifact@v5
+        with:
+          name: result
+          path: file.txt
