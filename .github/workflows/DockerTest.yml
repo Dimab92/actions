@@ -1,0 +1,10 @@
+name: Test Docker
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: node:12
+    steps:
+      - name: display version
+        run: node -v
